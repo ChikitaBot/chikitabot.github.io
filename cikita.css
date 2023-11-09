@@ -1,0 +1,427 @@
+body {
+transition: background 1s ease;
+background-color: #f8f8f8;
+}
+
+body header {
+    background-color: #ffffff45;
+    transition: 1s;
+    position: sticky;
+    top: 0;
+    box-shadow: none;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    border-radius: 14.25rem;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: 100;
+    display: flex;
+    box-shadow: none;
+    align-items: center;
+}
+header .site-title {
+    font-family: 'Red Hat Display', sans-serif;
+    color: #484848;
+    font-size: 200%;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+header a{
+    transition: 0.5s;
+}
+header a:visited {
+        text-decoration: none;
+      }
+header a:link {
+text-decoration: none;
+}
+header a:hover {
+color: #5c5c5c;
+}
+
+h2 {
+    margin-top: 10%;
+    font-size: 50px;
+    color: #484848;
+    margin: 0.67em 0;
+    max-inline-size: none;
+}
+
+.row {
+    display: flex;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 5%;
+    flex-wrap: none;
+    backdrop-filter: blur(11px);
+    z-index: 100;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: normal;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cikitaimg1 {
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    min-height: 1px;
+    max-width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    animation: grow-shrink 2s cubic-bezier(0, -0.64, 1, 1.71) infinite;
+}
+.chikitasettings {
+    flex: 0 0 50%;
+    padding-left: 72px;
+    padding-right: 100px!important;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    position: relative;
+    word-wrap: break-word;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    text-align: -webkit-match-parent;
+    display: block;
+    font-family: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    border-radius: 1rem;
+    background-color: #313338;
+    margin-left: 15%;
+}
+.cikitatext1 {
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+}
+.cikitatext1 h1 {
+    font-size: 50px;
+    margin-top: 15%;
+    color: #484848;
+    max-inline-size: none;
+}
+.text1 {
+    margin-left: 5%;
+}
+.cikitatext1 p{
+    font-size: 150%;
+    color: #484848;
+}
+.cikitatext1 section {
+    text-align: left;
+    vertical-align: middle;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+section p.addserver{
+    margin-top: 10%;
+    display: flex;
+    gap: 5%;
+    place-items: center;
+    justify-content: left;
+    font-family: 'Google Sans', sans-serif, system-ui;
+    background: #ffffff00;
+    text-align: center;vertical-align: middle;
+    border: 1px white;
+    max-inline-size: none;
+}
+section a.addserver {
+    margin-right: 5%; margin-left: 5%;
+    transition: 0.5s;
+}
+section a.addserver:hover {
+    box-shadow: rgb(1 1 1 / 10%) 0 4px 15px -1px, rgb(0 0 0 / 6%) 0 2px 10px -1px;
+    transform: scale(1.2);
+}
+
+section .addserver span{
+font-size: 170% !important;
+}
+
+.text2desk {
+    display: flex;
+}
+.text2mobile {
+    display: none;
+}
+
+.server-count {
+    margin-top: 0;
+    -webkit-margin-end: 0;
+    margin-inline-end: 0;
+    margin-bottom: 0;
+    -webkit-margin-start: 0.5rem;
+    margin-inline-start: 1.5rem;
+    font-size: 125% !important;
+}
+
+.member-count {
+    margin-top: 0;
+    -webkit-margin-end: 0;
+    margin-inline-end: 0;
+    margin-bottom: 0;
+    -webkit-margin-start: 0.5rem;
+    margin-inline-start: 1.5rem;
+    transition: 1s;
+    font-size: 125% !important;
+}
+.rowdown {
+    color: #484848;
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+    font-size: 150% !important;
+    margin-top: 5%;
+    gap: 5%;
+}
+
+.sec1 {
+    clip-path: polygon(20% 0%, 100% 0, 100% 50%, 80% 100%, 0 100%, 0% 50%);
+    -webkit-clip-path: polygon(20% 0%, 100% 0, 100% 50%, 80% 100%, 0 100%, 0% 50%);
+    background-color: #ebebeb;
+}
+
+.buttonprim {
+    color: #fff;
+    background-color: #5865f2;
+    cursor: pointer;
+    margin: 4px 8px 4px 0;
+    width: auto;
+    height: 32px;
+    min-width: 60px;
+    min-height: 32px;
+    transition: background-color .17s ease,color .17s ease;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* background: none; */
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 2px 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.buttongray {
+    color: #fff;
+    background-color: #4e5058;
+    cursor: pointer;
+    margin: 4px 8px 4px 0;
+    width: auto;
+    height: 32px;
+    min-width: 60px;
+    min-height: 32px;
+    transition: background-color .17s ease,color .17s ease;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* background: none; */
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 2px 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.buttonprim:hover {
+    background-color: #4752c4;
+}
+.buttongray:hover {
+    background-color: #6d6f78;
+}
+
+.buttongreen {
+    background-color: #248046;
+}
+.buttongreen:hover {
+    background-color: #1a6334;
+}
+
+div.gallery {
+margin: 5px;
+float: left;
+width: 500px;
+margin-bottom: 50px;
+}
+  
+div.gallery img {
+width: 100%;
+height: auto;
+}
+
+.gallery .desc {
+text-align: center;
+font-family: 'Red Hat Display', sans-serif;
+color: #484848;
+font-size: 18px;
+}
+
+@keyframes zoomAnimation {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2); 
+    }
+}
+
+@keyframes grow-shrink {
+0% {
+    transform: translateY(0);
+}
+
+50% {
+    transform: translateY(-10px);
+}
+100% {
+    transform: translateY(0);
+}
+}
+
+@media screen and (max-width: 1300px) {
+    body header {
+        margin-left: 3% !important;
+        margin-right: 3% !important;
+    }
+    .site-title {
+        font-size: 25px !important;
+    }
+    header .container {
+        justify-content: center;
+    }
+    .cikilogo {
+        width: 35px;
+    }
+    .row {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+    }
+    .cikitaimg {
+        width: 60%;
+    }
+    .cikitaimg1 {
+        flex: 0 0 100%;
+        box-sizing: content-box;
+        padding-top: 10%;
+        padding-bottom: 10%;
+
+    }
+    .cikitatext1 {
+        flex: 0 0 100% !important;
+        box-sizing: content-box;
+    }
+    .cikitatext1 section {
+        margin-right: 0px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    .cikitatext1 p {
+        font-size: 20px;
+    }
+    .cikitatext1 h1 {
+        font-size: 30px;
+    }
+    .text1 {
+        margin-left: 0px !important;
+    }
+    .cikitatext1 h2 {
+        font-size: 30px;
+    }
+    .chikitasettings {
+        flex: none !important;
+        transform: scale(0.5) !important;
+        margin-left: 0px !important;
+    }
+    section p.addserver{
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+    .cikitamusic {
+        transform: scale(0.8);
+        margin-top: 10%;
+    }
+    .server-count {
+        font-size: 100% !important;
+    }
+    
+    .member-count {
+        font-size: 100% !important;
+    }
+    .buttoncikita {
+        font-size: 14px !important;
+        padding: 15px 10px 15px !important;
+    }
+    .sec1   {
+        clip-path: none !important;
+        -webkit-clip-path: none !important;
+    }
+    .text2desk {
+        display: none;
+    }
+    .text2mobile {
+        display: flex;
+    }
+
+}
+@media screen and (max-width: 2000px) {
+    .row {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    body header {
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+}
+
+
