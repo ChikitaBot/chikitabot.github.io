@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   });
 
-req.open("GET", "https://api.cikita.chikitabot.net:58731/api/server_count", true);
+req.open("GET", "https://api.chikitabot.net:58731/api/server_count", true);
 req.send();
 
 document.addEventListener('DOMContentLoaded', function() {

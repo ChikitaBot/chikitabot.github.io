@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   });
 
-req.open("GET", "https://api.cikita.chikitabot.net:58731/api/server_count", true);
+req.open("GET", "https://api.chikitabot.net:58731/api/server_count", true);
 req.send();
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -71,7 +71,7 @@ if (currentURL.includes("https://chikitabot.net/archive/chikita/")) {
     // Diğer durumlar için varsayılan işlemleri burada gerçekleştirin
     console.log("Belirtilen sitelerden herhangi birinde değilsiniz.");
 }
-fetch('https://api.cikita.chikitabot.net:58731/api/archive' + plush)
+fetch('https://api.chikitabot.net:58731/api/archive' + plush)
   .then(response => response.json())
   .then(data => {
     // JSON verilerini işleme
