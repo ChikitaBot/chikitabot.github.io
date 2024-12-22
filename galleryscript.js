@@ -80,12 +80,8 @@ fetch('https://api.chikitabot.net:58731/api/archive' + plush)
 
     // query string'i ayrıştır
     const urlParams = new URLSearchParams(queryString);
-
-    // İstenen parametreyi al
     const id = urlParams.get('id');
-    // Parametrelerin varlığını kontrol et
-
-    function chikitafoto(link, id) {
+    function chikitafoto(link) {
             // 1. Ana galeri div elementini oluşturun
             var galleryDiv = document.createElement("div");
             galleryDiv.classList.add("gallery");
@@ -98,12 +94,12 @@ fetch('https://api.chikitabot.net:58731/api/archive' + plush)
             // 3. 'img' elementini oluşturun ve src ve alt özelliklerini ekleyin
             var imgElement = document.createElement("img");
             imgElement.setAttribute("src", link);
-            imgElement.setAttribute("alt", id);
+            imgElement.setAttribute("alt", plush);
     
             // 4. Açıklama div elementini oluşturun ve içeriğini ekleyin
             var descDiv = document.createElement("div");
             descDiv.classList.add("desc");
-            descDiv.textContent = id;
+            descDiv.textContent = plush;
     
             // Elementleri birleştirin
             linkElement.appendChild(imgElement);
@@ -119,24 +115,14 @@ fetch('https://api.chikitabot.net:58731/api/archive' + plush)
     if (id) {
       if (id == "random"){
         var random = Math.floor(Math.random() * data.length);
-        chikitafoto(data[random].link, data[random].id);
+        chikitafoto(data[random].link);
       }
-      else {
-        for (let i = 0; i < data.length; i++) {
-          const row = data[i];
-          if (id == row.id) {
-              chikitafoto(row.link, row.id);
-          }
-        }
-      }
-
     } else {
 
     for (let i = 0; i < data.length; i++) {
       const row = data[i];
 
-       chikitafoto(row.link, row.id);
-        
+       chikitafoto(row.link);
     }
     // 1. HTML elementini seçin
     var container = document.querySelector(".cikitagallery");
